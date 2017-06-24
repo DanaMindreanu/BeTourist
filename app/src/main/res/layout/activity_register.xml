@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dana.mindreanu.betourist.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <EditText
+                        android:id="@+id/registerUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/lightBlue"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/registerEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/lightBlue"
+                        android:hint="Email"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="110dp" />
+
+                    <EditText
+                        android:id="@+id/registerPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/lightBlue"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/registerCity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/lightBlue"
+                        android:hint="City"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="225dp" />
+
+                    <EditText
+                        android:id="@+id/registerCountry"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/lightBlue"
+                        android:hint="Country"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="284dp" />
+
+                    <EditText
+                        android:id="@+id/register_birthDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/lightBlue"
+                        android:hint="Date of birth(dd-MM-yyyy)"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="336dp" />
+
+
+                    <Button
+                        android:id="@+id/button_set_date"
+                        android:layout_width="94dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="end"
+                        android:onClick="showDatePickerDialog"
+                        android:text="Set date"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="305dp"
+                        tools:layout_editor_absoluteY="336dp" />
+
+
+                    <Button
+                        android:id="@+id/button_registerActivity"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Register"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="55dp"
+                        tools:layout_editor_absoluteY="430dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

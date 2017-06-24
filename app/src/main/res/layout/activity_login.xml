@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:background="@color/white"
-                    android:hint="@string/prompt_password"
+                    android:hint="Password"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
@@ -77,11 +77,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="50sp"
                 android:layout_marginTop="60dp"
-                android:text="@string/action_sign_in"
+                android:text="@string/action_sign_in_short"
                 android:textStyle="bold"
                 android:textSize="22sp"
                 android:textColor="@color/blue"
                 android:background="@color/lightBlue"
+                android:layout_weight="14.31" />
+
+            <Button
+                android:id="@+id/button_register"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:text="Register"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/blue"
+                android:background="@color/lightBlue"
+                android:onClick="showRegisterActivity"
                 android:layout_weight="14.31" />
 
         </LinearLayout>
